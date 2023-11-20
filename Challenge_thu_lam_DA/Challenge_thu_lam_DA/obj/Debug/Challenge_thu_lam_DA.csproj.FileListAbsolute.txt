@@ -46,3 +46,4 @@ D:\hoc_tren_lop\hk3\Code_IT008\Code_IT008\Challenge_thu_lam_DA\Challenge_thu_lam
 D:\hoc_tren_lop\hk3\Code_IT008\Code_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.csproj.CopyComplete
 D:\hoc_tren_lop\hk3\Code_IT008\Code_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.exe
 D:\hoc_tren_lop\hk3\Code_IT008\Code_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.pdb
+D:\hoc_tren_lop\hk3\Code_IT008\Code_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.frmHome.resources
