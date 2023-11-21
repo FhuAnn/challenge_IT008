@@ -60,14 +60,14 @@ namespace Challenge_thu_lam_DA
                         else
                         {
                             // No matching row found
-                            MessageBox.Show("NO");
+                            MessageBox.Show("đăng nhập thất bại");
                             return null;
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Key combination hasUser!" + ex.Message);
+                    MessageBox.Show("Key combination at hasUser!" + ex.Message);
                     return null;
                 }
 
