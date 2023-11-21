@@ -18,17 +18,10 @@ namespace Challenge_thu_lam_DA
             InitializeComponent();
             lb_name.Text = user.name;
             lb_email.Text = user.email;
+            lb_name.TextAlign = ContentAlignment.MiddleCenter;
+            lb_email.TextAlign = ContentAlignment.MiddleCenter;
         }
 
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
@@ -41,9 +34,6 @@ namespace Challenge_thu_lam_DA
             this.Close();
         }
 
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

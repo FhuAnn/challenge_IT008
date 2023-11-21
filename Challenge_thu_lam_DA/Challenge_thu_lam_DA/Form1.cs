@@ -43,10 +43,10 @@ namespace Challenge_thu_lam_DA
             {
                 string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password = @pw";
                 SqlCommand sqlcmd = new SqlCommand(query, connection);
-               // MessageBox.Show($"{email}-user - {password}-pw");
+              // MessageBox.Show($"{email}-user - {password}-pw");
                 sqlcmd.Parameters.Add("@username", SqlDbType.VarChar, 1000).Value = email;
                 sqlcmd.Parameters.Add("@pw", SqlDbType.VarChar, 1000).Value = Program.CaculateMD5(password);
-                //MessageBox.Show($"{email}-user - {Program.CaculateMD5(password)}-pw");
+              //  MessageBox.Show($"{email}-user - {Program.CaculateMD5(password)}-pw");
 
                 try
                 {
@@ -60,7 +60,6 @@ namespace Challenge_thu_lam_DA
                         else
                         {
                             // No matching row found
-                            MessageBox.Show("đăng nhập thất bại");
                             return null;
                         }
                     }

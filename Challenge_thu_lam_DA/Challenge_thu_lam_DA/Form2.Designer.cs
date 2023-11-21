@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lb_name = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lb_email = new Bunifu.UI.WinForms.BunifuLabel();
             this.lb_caption = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_logout = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.lb_name = new System.Windows.Forms.Label();
+            this.lb_email = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -99,7 +99,6 @@
             this.bunifuPictureBox1.TabIndex = 0;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -128,7 +127,7 @@
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(605, 45);
+            this.bunifuLabel2.Location = new System.Drawing.Point(615, 45);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(180, 81);
@@ -136,40 +135,6 @@
             this.bunifuLabel2.Text = "HOME";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lb_name
-            // 
-            this.lb_name.AllowParentOverrides = false;
-            this.lb_name.AutoEllipsis = false;
-            this.lb_name.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lb_name.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lb_name.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
-            this.lb_name.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lb_name.Location = new System.Drawing.Point(621, 306);
-            this.lb_name.Name = "lb_name";
-            this.lb_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lb_name.Size = new System.Drawing.Size(169, 67);
-            this.lb_name.TabIndex = 4;
-            this.lb_name.Text = "{Name}";
-            this.lb_name.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lb_name.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lb_name.Click += new System.EventHandler(this.bunifuLabel1_Click);
-            // 
-            // lb_email
-            // 
-            this.lb_email.AllowParentOverrides = false;
-            this.lb_email.AutoEllipsis = false;
-            this.lb_email.CursorType = null;
-            this.lb_email.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_email.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lb_email.Location = new System.Drawing.Point(658, 379);
-            this.lb_email.Name = "lb_email";
-            this.lb_email.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lb_email.Size = new System.Drawing.Size(95, 41);
-            this.lb_email.TabIndex = 5;
-            this.lb_email.Text = "{Email}";
-            this.lb_email.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lb_email.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lb_caption
             // 
@@ -206,11 +171,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges6;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_exit.DisabledFillColor = System.Drawing.Color.Empty;
@@ -298,11 +263,11 @@
             this.btn_logout.ColorContrastOnClick = 45;
             this.btn_logout.ColorContrastOnHover = 45;
             this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_logout.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btn_logout.CustomizableEdges = borderEdges5;
             this.btn_logout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_logout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_logout.DisabledFillColor = System.Drawing.Color.Empty;
@@ -371,22 +336,45 @@
             this.btn_logout.UseDefaultRadiusAndThickness = true;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
+            // lb_name
+            // 
+            this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_name.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_name.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lb_name.Location = new System.Drawing.Point(132, 311);
+            this.lb_name.Name = "lb_name";
+            this.lb_name.Size = new System.Drawing.Size(1152, 65);
+            this.lb_name.TabIndex = 9;
+            this.lb_name.Text = "{name}";
+            this.lb_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lb_email
+            // 
+            this.lb_email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_email.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lb_email.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lb_email.Location = new System.Drawing.Point(230, 379);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(942, 65);
+            this.lb_email.TabIndex = 10;
+            this.lb_email.Text = "{email}";
+            this.lb_email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1448, 899);
+            this.Controls.Add(this.lb_email);
+            this.Controls.Add(this.lb_name);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.lb_caption);
-            this.Controls.Add(this.lb_email);
-            this.Controls.Add(this.lb_name);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
@@ -400,11 +388,11 @@
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuLabel lb_email;
-        private Bunifu.UI.WinForms.BunifuLabel lb_name;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel lb_caption;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_logout;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_exit;
+        private System.Windows.Forms.Label lb_name;
+        private System.Windows.Forms.Label lb_email;
     }
 }
