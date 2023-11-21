@@ -43,10 +43,10 @@ namespace Challenge_thu_lam_DA
             {
                 string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password = @pw";
                 SqlCommand sqlcmd = new SqlCommand(query, connection);
-                MessageBox.Show($"{email}-user - {password}-pw");
+               // MessageBox.Show($"{email}-user - {password}-pw");
                 sqlcmd.Parameters.Add("@username", SqlDbType.VarChar, 1000).Value = email;
                 sqlcmd.Parameters.Add("@pw", SqlDbType.VarChar, 1000).Value = Program.CaculateMD5(password);
-                MessageBox.Show($"{email}-user - {Program.CaculateMD5(password)}-pw");
+                //MessageBox.Show($"{email}-user - {Program.CaculateMD5(password)}-pw");
 
                 try
                 {
@@ -142,43 +142,6 @@ namespace Challenge_thu_lam_DA
                 if (home.DialogResult != DialogResult.No) { this.Close(); }
                 this.Visible = true;
             }
-            /*//testConnection();
-            connection = new SqlConnection(cnt);
-            connection.Open();
-
-                string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password=@pw";
-            SqlCommand sqlcmd = new SqlCommand(query, connection);
-            sqlcmd.Parameters.Add("@username", SqlDbType.VarChar, 1000).Value = tab1_tbx_username.Text;
-            sqlcmd.Parameters.Add("@pw", SqlDbType.VarChar, 100).Value = Program.CaculateMD5(tab1_tbx_password.Text);
-            try
-            {
-                using (SqlDataReader reader = sqlcmd.ExecuteReader())
-                {
-                    if (reader.HasRows && reader.Read())
-                    {
-                        //   MessageBox.Show("Có");
-                        User user = new User(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3));
-                        this.Visible = false;
-                        var home = new frmHome(user);
-                        home.ShowDialog();
-                        if (home.DialogResult != DialogResult.No) { this.Close(); }
-                        this.Visible = true;
-                        // khoi tao lai
-                        tab1_tbx_password.Text=tbx_pw.Text=tbx_email.Text=tbx_name.Text=string.Empty;
-                    }
-                    else
-                    {
-                        // No matching row found
-                        MessageBox.Show("Invalid Login Credentials");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Key combination hasUser!" + ex.Message);
-              
-            }*/
-
         }
 
         public static int getLastId()
