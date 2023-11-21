@@ -341,10 +341,10 @@
             this.bunifuPages1.Location = new System.Drawing.Point(750, 0);
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage1;
-            this.bunifuPages1.PageIndex = 0;
-            this.bunifuPages1.PageName = "tabPage1";
-            this.bunifuPages1.PageTitle = "tabPage1";
+            this.bunifuPages1.Page = this.tabPage2;
+            this.bunifuPages1.PageIndex = 1;
+            this.bunifuPages1.PageName = "tabPage2";
+            this.bunifuPages1.PageTitle = "tabPage2";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(700, 931);
             this.bunifuPages1.TabIndex = 2;
@@ -1009,13 +1009,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(198)))), ((int)(((byte)(53)))));
-            this.label3.Location = new System.Drawing.Point(242, 129);
+            this.label3.Location = new System.Drawing.Point(98, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 70);
+            this.label3.Size = new System.Drawing.Size(527, 65);
             this.label3.TabIndex = 11;
-            this.label3.Text = "SIGN UP";
+            this.label3.Text = "CREATE AN ACCOUNT";
             // 
             // bunifuFormDock1
             // 
