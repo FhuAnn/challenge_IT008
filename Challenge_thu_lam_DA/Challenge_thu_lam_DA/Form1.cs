@@ -19,7 +19,7 @@ namespace Challenge_thu_lam_DA
     {
 
         static string cnt = "Data Source=LAPTOP-7UOGDK8A;Initial Catalog=DateUser;Integrated Security=True";
-        static SqlConnection connection = new SqlConnection(cnt);
+        static SqlConnection connection ;
         static SqlDataReader reader;
 
         public static void testConnection()
@@ -39,26 +39,28 @@ namespace Challenge_thu_lam_DA
         }
         public static User hasUser(string email, string password)
         {
-            testConnection();
-
             using (connection)
             {
-                string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password=@pw";
+                string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password = @pw";
                 SqlCommand sqlcmd = new SqlCommand(query, connection);
-                sqlcmd.Parameters.Add("@username", SqlDbType.VarChar,100).Value=email.ToString();
-                sqlcmd.Parameters.Add("@pw",SqlDbType.VarChar,100).Value=password.ToString();
+                MessageBox.Show($"{email}-user - {password}-pw");
+                sqlcmd.Parameters.Add("@username", SqlDbType.VarChar, 1000).Value = email;
+                sqlcmd.Parameters.Add("@pw", SqlDbType.VarChar, 1000).Value = Program.CaculateMD5(password);
+                MessageBox.Show($"{email}-user - {Program.CaculateMD5(password)}-pw");
+
                 try
                 {
                     using (SqlDataReader reader = sqlcmd.ExecuteReader())
                     {
                         if (reader.HasRows && reader.Read())
                         {
-                            User user = new User(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3));
+                            User user = new User(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3));
                             return user;
                         }
                         else
                         {
                             // No matching row found
+                            MessageBox.Show("NO");
                             return null;
                         }
                     }
@@ -69,7 +71,7 @@ namespace Challenge_thu_lam_DA
                     return null;
                 }
 
-  
+
             }
         }
 
@@ -119,10 +121,12 @@ namespace Challenge_thu_lam_DA
         }
 
         private void btn_si_Click(object sender, EventArgs e)
+
         {
-            testConnection();
+            connection = new SqlConnection(cnt);
+            //testConnection();
             connection.Open();
-            User user = hasUser(tab1_tbx_username.Text.ToString(), Program.CaculateMD5(tab1_tbx_password.Text.ToString()));
+            User user = hasUser(tab1_tbx_username.Text, tab1_tbx_password.Text);
             connection.Close();
             if (user == null)
             {
@@ -130,12 +134,51 @@ namespace Challenge_thu_lam_DA
             }
             else
             {
+                tab1_tbx_password.Text = tbx_pw.Text = tbx_email.Text = tbx_name.Text = string.Empty;
+
                 this.Visible = false;
                 var home = new frmHome(user);
                 home.ShowDialog();
                 if (home.DialogResult != DialogResult.No) { this.Close(); }
                 this.Visible = true;
             }
+            /*//testConnection();
+            connection = new SqlConnection(cnt);
+            connection.Open();
+
+                string query = $"SELECT * FROM  [DateUser].[dbo].[user_pw] WHERE username = @username and password=@pw";
+            SqlCommand sqlcmd = new SqlCommand(query, connection);
+            sqlcmd.Parameters.Add("@username", SqlDbType.VarChar, 1000).Value = tab1_tbx_username.Text;
+            sqlcmd.Parameters.Add("@pw", SqlDbType.VarChar, 100).Value = Program.CaculateMD5(tab1_tbx_password.Text);
+            try
+            {
+                using (SqlDataReader reader = sqlcmd.ExecuteReader())
+                {
+                    if (reader.HasRows && reader.Read())
+                    {
+                        //   MessageBox.Show("Có");
+                        User user = new User(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3));
+                        this.Visible = false;
+                        var home = new frmHome(user);
+                        home.ShowDialog();
+                        if (home.DialogResult != DialogResult.No) { this.Close(); }
+                        this.Visible = true;
+                        // khoi tao lai
+                        tab1_tbx_password.Text=tbx_pw.Text=tbx_email.Text=tbx_name.Text=string.Empty;
+                    }
+                    else
+                    {
+                        // No matching row found
+                        MessageBox.Show("Invalid Login Credentials");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Key combination hasUser!" + ex.Message);
+              
+            }*/
+
         }
 
         public static int getLastId()
@@ -161,7 +204,7 @@ namespace Challenge_thu_lam_DA
         }
         private void bunifuButton1_Click(object sender, EventArgs e)// sign up
         {
-            testConnection();
+             connection = new SqlConnection(cnt);
             connection.Open();
             string query = $"SELECT * FROM [DateUser].[dbo].[user_pw] WHERE username = @email";
             SqlCommand sqlcmd = new SqlCommand(query, connection);
@@ -190,14 +233,14 @@ namespace Challenge_thu_lam_DA
                 sqlcmd = new SqlCommand(query, connection);
                 sqlcmd.Parameters.Add("@ten", SqlDbType.NVarChar, 40).Value = tbx_name.Text;
                 sqlcmd.Parameters.Add("@email", SqlDbType.VarChar, 100).Value = tbx_email.Text.ToString();
-                sqlcmd.Parameters.Add("@password", SqlDbType.VarChar, 100).Value = Program.CaculateMD5(tab1_tbx_password.Text);
+                sqlcmd.Parameters.Add("@password", SqlDbType.VarChar, 1000).Value = Program.CaculateMD5(tbx_pw.Text);
                 try
                 {
                     reader = sqlcmd.ExecuteReader();
                     connection.Close();
                     MessageBox.Show("Đăng ký thành công");
                     tab1_tbx_password.Text = tbx_pw.Text;
-                    tab1_tbx_username.Text = tbx_name.Text;
+                    tab1_tbx_username.Text = tbx_email.Text;
                     btn_si_Click(sender, e);
                 }
                 catch (Exception ex)

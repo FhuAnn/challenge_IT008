@@ -16,6 +16,8 @@ namespace Challenge_thu_lam_DA
         public frmHome(User user)
         {
             InitializeComponent();
+            lb_name.Text = user.name;
+            lb_email.Text = user.email;
         }
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
@@ -37,6 +39,11 @@ namespace Challenge_thu_lam_DA
         {
             this.DialogResult = DialogResult.No;
             this.Close();
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
