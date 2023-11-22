@@ -153,7 +153,7 @@
             this.btn_signup.IdleIconLeftImage = null;
             this.btn_signup.IdleIconRightImage = null;
             this.btn_signup.IndicateFocus = false;
-            this.btn_signup.Location = new System.Drawing.Point(372, 655);
+            this.btn_signup.Location = new System.Drawing.Point(372, 642);
             this.btn_signup.Name = "btn_signup";
             this.btn_signup.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_signup.OnDisabledState.BorderRadius = 30;

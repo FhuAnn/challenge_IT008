@@ -96,3 +96,4 @@ D:\hoc_tren_lop\hk3\Code_IT008\Nộp code\challenge_IT008\Challenge_thu_lam_DA\C
 D:\hoc_tren_lop\hk3\Code_IT008\Nộp code\challenge_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.exe
 D:\hoc_tren_lop\hk3\Code_IT008\Nộp code\challenge_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.pdb
 D:\hoc_tren_lop\hk3\Code_IT008\Nộp code\challenge_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.frmDashboard.resources
+D:\hoc_tren_lop\hk3\Code_IT008\Nộp code\challenge_IT008\Challenge_thu_lam_DA\Challenge_thu_lam_DA\obj\Debug\Challenge_thu_lam_DA.UserControl1.resources

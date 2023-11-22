@@ -33,5 +33,44 @@ namespace Challenge_thu_lam_DA
             this.DialogResult = DialogResult.No;
             this.Close();
         }
+
+        private void bunifuPanel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_store_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(1);
+        }
+
+        private void btn_finance_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(2);
+
+        }
+
+        private void btn_staff_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(3);
+
+        }
+
+        private void btn_presciption_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(4);
+
+        }
+
+        private void btn_setting_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(5);
+
+        }
+
+        private void btn_sale_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(6);
+        }
     }
 }
