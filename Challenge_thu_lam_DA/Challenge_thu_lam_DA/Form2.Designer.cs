@@ -83,6 +83,7 @@
             this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -94,6 +95,7 @@
             this.tabPage2.SuspendLayout();
             this.bunifuPages1.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -1624,10 +1626,10 @@
             this.bunifuPages1.Location = new System.Drawing.Point(269, 0);
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage1;
-            this.bunifuPages1.PageIndex = 1;
-            this.bunifuPages1.PageName = "tabPage1";
-            this.bunifuPages1.PageTitle = "store";
+            this.bunifuPages1.Page = this.tabPage7;
+            this.bunifuPages1.PageIndex = 6;
+            this.bunifuPages1.PageName = "tabPage7";
+            this.bunifuPages1.PageTitle = "Dashboard";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(1179, 899);
             this.bunifuPages1.TabIndex = 13;
@@ -1653,6 +1655,7 @@
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(247)))), ((int)(((byte)(225)))));
             this.tabPage7.Controls.Add(this.label1);
+            this.tabPage7.Controls.Add(this.bunifuPictureBox2);
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -1663,11 +1666,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 101);
+            this.label1.Location = new System.Drawing.Point(56, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
+            // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPictureBox2.AutoSizeHeight = true;
+            this.bunifuPictureBox2.BorderRadius = 0;
+            this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(90, -53);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(963, 963);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 1;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // frmDashboard
             // 
@@ -1700,6 +1721,7 @@
             this.bunifuPages1.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1743,5 +1765,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuPanel inlicator;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }
