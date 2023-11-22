@@ -136,7 +136,7 @@ namespace Challenge_thu_lam_DA
                 tab1_tbx_password.Text = tbx_pw.Text = tbx_email.Text = tbx_name.Text = string.Empty;
 
                 this.Visible = false;
-                var home = new frmHome(user);
+                var home = new frmDashboard(user);
                 home.ShowDialog();
                 if (home.DialogResult != DialogResult.No) { this.Close(); }
                 this.Visible = true;

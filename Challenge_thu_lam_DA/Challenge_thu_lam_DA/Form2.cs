@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Challenge_thu_lam_DA
 {
-    public partial class frmHome : Form
+    public partial class frmDashboard : Form
     {
-        public frmHome(User user)
+        public frmDashboard(User user)
         {
             InitializeComponent();
             lb_name.Text = user.name;
@@ -33,7 +33,5 @@ namespace Challenge_thu_lam_DA
             this.DialogResult = DialogResult.No;
             this.Close();
         }
-
-   
     }
 }

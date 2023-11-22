@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Challenge_thu_lam_DA.Model;
 
 namespace Challenge_thu_lam_DA
 {
@@ -16,9 +17,10 @@ namespace Challenge_thu_lam_DA
         [STAThread]
         static void Main()
         {
+            User user= new User();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Login());
+            Application.Run(new frmDashboard(user));
         }
         public static string CaculateMD5(string input)
         {

@@ -245,7 +245,7 @@
             this.btn_signin.IdleIconLeftImage = null;
             this.btn_signin.IdleIconRightImage = null;
             this.btn_signin.IndicateFocus = false;
-            this.btn_signin.Location = new System.Drawing.Point(150, 655);
+            this.btn_signin.Location = new System.Drawing.Point(151, 642);
             this.btn_signin.Name = "btn_signin";
             this.btn_signin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_signin.OnDisabledState.BorderRadius = 30;
