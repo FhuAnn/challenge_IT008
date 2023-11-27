@@ -33,7 +33,7 @@ namespace Challenge_thu_lam_DA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Can't connect with DB sao ki, " + ex.Message);
+                MessageBox.Show("Can't connect with DB, sao ki z, " + ex.Message);
 
             }
         }
@@ -86,7 +86,7 @@ namespace Challenge_thu_lam_DA
         {
             ReFresh1();// gọi hàm sửa lỗi
         }
-        public void ReFresh1()
+        public void ReFresh1()  
         {
             tab1_tbx_username.Refresh();
             tab1_tbx_password.Refresh();
