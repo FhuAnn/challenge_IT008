@@ -1225,15 +1225,22 @@
         AAAAAAAAAIAZeOSR/w+5scfeRSm2hwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuHScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMgAAAARCAYAAACYaeN5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEjSURBVGhD7dkxbsIwFMbxjIwdGRl7hI4dewwWJJbuHTsw
-        durQSyCxdU2cCTHlBp3KFCRKUalUBvq94EjBmAvg/5N+imw/Z8onYZyFVRRFX57k3TlXywG4YrW+9Vye
-        5dbHIF5qGGnDqizLffASIAUbZeDFx+G0LEVq+Ao2AKnZykJ56PloNOF41OR3pwlIVp7nv3q+tuEYaLDu
-        NgBwa2XjzgIy0YAzB3Bu2p49YotA0pSNDwvILrYIwB2y2CSAIwsI5w/gAgtIFU4CaNQWkLdgEoDYH1h2
-        SL/XgHsQ4NRW2Ri2l4Uz+Ys0AamqmnBYKRw9WRISoPGpLPR9PI6liRuZaZGfW0jVj1Rn4eiWFh/UNNdz
-        09kIXC1963ZZbsEY+xj4yrJ/GbuZmnazQAkAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAIoAAAA8CAYAAAC5FCIMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALSSURBVHhe7Z0xb9NQFIU7MrIg6izlJ/AzGBkZGRkZGfkH
+        UZ1IjBkZM3bMmNqu1JGxY0dGRng3OeLa8U1T0gK133ekb4h17FR6p+/dZ8XXJwgh9P91el69KWbN56Js
+        vk7KejWZNTeJn/CEKJtbjc1yO1aXb88Wq2cawr+nybx6bcEoZvX33h8FQ+LCQqNhfTy9mFenKZGL4Ath
+        yNhsk/75NcwPkyVv7wwyD47B06MMjrUozuuPGu7jZBfoXZhwjICr3jErKY6qX4qy+rR7MRgbvcAsNfz3
+        ky033Qv0EwjjxHZHisHd2hau7ZqEkIyenXLCbn0oDvuVjMv2SZAJrbCkeuVacYhlW6XOyZAx1QfFoq9k
+        aM0mLDn50RnzG8WiK9sapSnnR8sIuRPdjOvvdCB3wh1QUV59icyQG3X784Xi4UoHW/VJxwz50q9TbEsU
+        GCFjrGZVPFz8dAAiFA9XZAJQPFyRCUDxcEUmAMXDFZkAFA9XZAJQPFyRCUDxcEUmAMXDFZkAFA9XZAJQ
+        PFyRCUDxcEUmAMXDFZkAFA9XZAJQPFyRCUDxcEUmAMXDFZkAFA9XZAJQPFyRCUDxcEUmAMXDFZkAFA9X
+        ZAJQPFyRCUDxcPHcMUQoHq7JrP4WGSFvFA+XGteGZsiW4JHSdh/ZA+0mYcz4c+cpE2vFwzUpq/e/zbQI
+        zRhvpmMdLhQP18vp+lX3BMidvU3/Oh0NWH4ypLXspF3w3gbFYadqyJN5M1UsYnX7pNDwL0dsNrF+w4pE
+        LLpWZ8hOmXHvlyjYtNM+kXolI8p6pRgclhUx3IDLgZ1efWVze3DJ2ZVe5rTuXGh7se5nGB7RGNpr5Y59
+        ydO2SfGetqKbm3J0jxwW8XjZhPDHM0mkzV1bS1zwJTBcbHcTNh1+iDazy/atpPwcYQSksVw8yixylzav
+        srUliYJ3MNj9MQtHWn7enU2vn2soEULon+vk5BeAJDnO1dHl+AAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
