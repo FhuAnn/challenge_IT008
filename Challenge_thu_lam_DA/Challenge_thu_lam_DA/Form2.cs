@@ -117,5 +117,30 @@ namespace Challenge_thu_lam_DA
         {
 
         }
+
+        private void bunifuPanel5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
