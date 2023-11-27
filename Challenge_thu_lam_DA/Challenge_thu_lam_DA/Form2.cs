@@ -20,7 +20,7 @@ namespace Challenge_thu_lam_DA
             lb_email.Text = user.email;
             lb_name.TextAlign = ContentAlignment.MiddleCenter;
             lb_email.TextAlign = ContentAlignment.MiddleCenter;
-            bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
+            bunifuFormDock1.SubscribeControlToDragEvents(bunifuGradientPanel1);
           //  bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel2);
         }
 
@@ -96,9 +96,26 @@ namespace Challenge_thu_lam_DA
 
         }
 
-        private void btn_exit_Click_1(object sender, EventArgs e)
+     
+        private void btn_exit_Click_2(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
